@@ -93,7 +93,7 @@ if st.button("🚀 Ask Agent!"):
                     st.error(response_data["error"])
                 else:
                     st.subheader("🤖 Agent Response")
-                    st.success(response_data["response"])
+                    st.success(response_data)
             else:
                 st.error(f"Backend returned status code {response.status_code}")
         except Exception as e:
