@@ -50,7 +50,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="LangGraph Agent UI", layout="centered")
-st.title("🤖 AI Chatbot Agents")
+st.title("🤖 LangChat")
 st.write("Create and Interact with Custom AI Agents!")
 
 system_prompt = st.text_area("🧠 Define your AI Agent", height=70, placeholder="Type your system prompt here...")
@@ -69,7 +69,7 @@ allow_web_search = st.checkbox("🌐 Allow Web Search")
 
 user_query = st.text_area("💬 Enter your query", height=150, placeholder="Ask Anything!")
 
-API_URL = "http://127.0.0.1:9999/chat"  # 🔁 You can change this to your deployed URL
+API_URL =  "https://langchat-backend.onrender.com/chat" # 🔁 You can change this to your deployed URL
 
 # Step 2: Connect with backend via URL
 if st.button("🚀 Ask Agent!"):
